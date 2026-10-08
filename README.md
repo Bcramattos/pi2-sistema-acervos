@@ -32,3 +32,19 @@ Projeto Integrador II / Banco de Dados I — **FATEC Itu** (2º semestre 2026).
 
 ## 👥 Equipe
 Grupo 3 — FATEC Itu · 2º semestre 2026.
+
+
+---
+
+## 🗂️ GitHub Project (Kanban)
+
+> O Project V2 ("PI II — Backlog Acervos") é criado/ativado via interface (1 clique):
+> **Repos → pi2-sistema-acervos → Projects → New project → Import/Board** com as colunas:
+> `Backlog` · `To Do` · `In Progress` · `Code Review / Testes` · `Done`
+> *(API de Projects exige token com permissão `projects:rw` — o token atual não a tem.)*
+
+## 🏷️ Labels criadas
+`epic:E1..E6` · `priority:P0..P3` · `sprint:S1..S3`
+
+## 📥 Issues
+As histórias de usuário são gerenciadas como **Issues** (uma por história), com labels de épico/prioridade/sprint. A issue **#1** é o modelo de formatação.
