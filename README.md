@@ -14,18 +14,22 @@ Projeto Integrador II / Banco de Dados I — **FATEC Itu** (2º semestre 2026).
 | **Code Review / Testes** | Validação do banco de dados e regras de negócio |
 | **Done** | Concluídas e validadas |
 
-### Épicos (definidos a partir do documento do projeto)
+### Épicos (do documento oficial)
 
-> ⚠️ Em preenchimento — épicos/histórias detalhados a partir do documento oficial (PI II - 2sem 2026).
+| Épico | Escopo | Issues |
+|---|---|---|
+| **E1** Modelagem do banco | 6 tabelas + PKs/FKs + tipos do dicionário | #8–#13 |
+| **E2** Cadastros base | CRUD Categoria, Item_Acervo, Responsavel, Destino | #14–#17 |
+| **E3** Movimentações | abrir exposição → vincular itens c/ laudo → registrar retorno | #18–#20 |
+| **E4** Consultas/relatórios | histórico, itens fora, atrasadas, laudo saída×retorno | #21–#24 |
+| **E5** Integridade | constraints, CHECKs, política de FKs | #25–#26 |
+| **E6** Documentação | DER, dicionário, scripts SQL | #27–#29 |
 
-- [ ] **E1 — Modelagem do banco de dados** (tabelas, relacionamentos, constraints)
-- [ ] **E2 — Cadastros base** (ex.: usuários, materiais/acervos, categorias)
-- [ ] **E3 — Movimentações** (entrada e saída de acervos, status)
-- [ ] **E4 — Consultas e relatórios** (buscas, histórico, dashboards)
-- [ ] **E5 — Regras de negócio e integridade** (validações, triggers, RLS/policies)
-- [ ] **E6 — Documentação e entrega** (DER, dicionário de dados, scripts SQL)
+**Entidades:** Destino · Exposicao · Responsavel · Item_Acervo · Categoria · Item_Exposicao (associativa)
 
-### Convenções
+**Board:** https://github.com/users/Bcramattos/projects/2
+
+## Convenções
 - **Histórias de usuário:** `Como <papel>, quero <ação>, para <benefício>`
 - **Tarefas técnicas:** prefixo `[DB]`, `[SQL]`, `[DOC]`
 - **Issue labels:** `epic:E1..E6`, `priority:P0..P3`, `sprint:S1..`
