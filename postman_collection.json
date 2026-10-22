@@ -1,0 +1,439 @@
+{
+  "info": {
+    "name": "API Museu - CRUD",
+    "description": "Collection manual do projeto API Museu para importação direta no Postman/VS Code.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "API Museu",
+      "item": [
+        {
+          "name": "GET /api",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api"
+            }
+          }
+        },
+        {
+          "name": "GET /destinos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/destinos"
+            }
+          }
+        },
+        {
+          "name": "GET /destinos/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/destinos/1"
+            }
+          }
+        },
+        {
+          "name": "POST /destinos",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Museu Histórico\",\n  \"descricao\": \"Museu de história local\",\n  \"endereco\": \"Rua Exemplo, 123\",\n  \"cidade\": \"Itu\",\n  \"estado\": \"SP\",\n  \"pais\": \"Brasil\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/destinos"
+            }
+          }
+        },
+        {
+          "name": "PUT /destinos/:id",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Museu Histórico Atualizado\",\n  \"descricao\": \"Museu de história local e cultura\",\n  \"endereco\": \"Rua Exemplo, 456\",\n  \"cidade\": \"Itu\",\n  \"estado\": \"SP\",\n  \"pais\": \"Brasil\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/destinos/1"
+            }
+          }
+        },
+        {
+          "name": "DELETE /destinos/:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/destinos/1"
+            }
+          }
+        },
+        {
+          "name": "GET /instituicoes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/instituicoes"
+            }
+          }
+        },
+        {
+          "name": "GET /instituicoes/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/instituicoes/1"
+            }
+          }
+        },
+        {
+          "name": "POST /instituicoes",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Museu de Arte Atual\",\n  \"tipo\": \"Museu\",\n  \"email\": \"contato@museu.com\",\n  \"telefone\": \"1133334444\",\n  \"endereco\": \"Av. das Artes, 100\",\n  \"site\": \"https://www.museu.com\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/instituicoes"
+            }
+          }
+        },
+        {
+          "name": "PUT /instituicoes/:id",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Museu de Arte Atualizado\",\n  \"tipo\": \"Museu\",\n  \"email\": \"novo@contato.com\",\n  \"telefone\": \"1199998888\",\n  \"endereco\": \"Av. das Artes, 120\",\n  \"site\": \"https://www.museu-atualizado.com\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/instituicoes/1"
+            }
+          }
+        },
+        {
+          "name": "DELETE /instituicoes/:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/instituicoes/1"
+            }
+          }
+        },
+        {
+          "name": "GET /categorias",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/categorias"
+            }
+          }
+        },
+        {
+          "name": "GET /categorias/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/categorias/1"
+            }
+          }
+        },
+        {
+          "name": "POST /categorias",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Pintura\",\n  \"descricao\": \"Obras artísticas em tela\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/categorias"
+            }
+          }
+        },
+        {
+          "name": "PUT /categorias/:id",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Pinturas e Têxteis\",\n  \"descricao\": \"Obras de arte em tela e tecidos\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/categorias/1"
+            }
+          }
+        },
+        {
+          "name": "DELETE /categorias/:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/categorias/1"
+            }
+          }
+        },
+        {
+          "name": "GET /itens-acervo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/itens-acervo"
+            }
+          }
+        },
+        {
+          "name": "GET /itens-acervo/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/itens-acervo/1"
+            }
+          }
+        },
+        {
+          "name": "POST /itens-acervo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"A Noite Estrelada\",\n  \"autor\": \"Vincent van Gogh\",\n  \"isbn\": \"9788535902776\",\n  \"ano_publicacao\": 1889,\n  \"quantidade\": 1,\n  \"ativo\": true\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/itens-acervo"
+            }
+          }
+        },
+        {
+          "name": "PUT /itens-acervo/:id",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"A Noite Estrelada - Edição Especial\",\n  \"autor\": \"Vincent van Gogh\",\n  \"isbn\": \"9788535902776\",\n  \"ano_publicacao\": 1889,\n  \"quantidade\": 2,\n  \"ativo\": true\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/itens-acervo/1"
+            }
+          }
+        },
+        {
+          "name": "DELETE /itens-acervo/:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/itens-acervo/1"
+            }
+          }
+        },
+        {
+          "name": "GET /atividades",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/atividades"
+            }
+          }
+        },
+        {
+          "name": "GET /atividades/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/atividades/1"
+            }
+          }
+        },
+        {
+          "name": "POST /atividades",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id_destino\": 1,\n  \"titulo\": \"Exposição Itinerante\",\n  \"descricao\": \"Envio de peças para exposição externa\",\n  \"tipo_atividade\": \"Exposição\",\n  \"data_inicio\": \"2026-11-01\",\n  \"data_fim_prevista\": \"2026-11-30\",\n  \"status\": \"Planejada\",\n  \"email_contato\": \"contato@exemplo.com\",\n  \"telefone_contato\": \"11999999999\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/atividades"
+            }
+          }
+        },
+        {
+          "name": "PUT /atividades/:id",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id_destino\": 1,\n  \"titulo\": \"Exposição Itinerante Atualizada\",\n  \"descricao\": \"Envio de peças com cronograma estendido\",\n  \"tipo_atividade\": \"Exposição\",\n  \"data_inicio\": \"2026-11-01\",\n  \"data_fim_prevista\": \"2026-12-10\",\n  \"status\": \"Em andamento\",\n  \"email_contato\": \"contato@exemplo.com\",\n  \"telefone_contato\": \"11999999999\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/atividades/1"
+            }
+          }
+        },
+        {
+          "name": "DELETE /atividades/:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/atividades/1"
+            }
+          }
+        },
+        {
+          "name": "GET /responsaveis",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/responsaveis"
+            }
+          }
+        },
+        {
+          "name": "GET /responsaveis/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/responsaveis/1"
+            }
+          }
+        },
+        {
+          "name": "POST /responsaveis",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id_atividade\": 1,\n  \"id_responsavel\": 1\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/responsaveis"
+            }
+          }
+        },
+        {
+          "name": "PUT /responsaveis/:id",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id_atividade\": 1,\n  \"id_responsavel\": 2\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/responsaveis/1"
+            }
+          }
+        },
+        {
+          "name": "DELETE /responsaveis/:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/responsaveis/1"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
